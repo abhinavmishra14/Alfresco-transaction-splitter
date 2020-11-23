@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+
+<beans>
+<bean id="splitTransaction" class="eu.xenit.alfresco.tools.transactionSplitter.TransactionSplitter" parent="action-executer">
+    <property name="serviceRegistry">
+        <ref bean="ServiceRegistry" />
+    </property>
+    <property name="behaviourFilter">
+        <ref bean="policyBehaviourFilter" />
+    </property>
+	<property name="totalBatchNodes" value="50" />
+</bean>
+</beans>

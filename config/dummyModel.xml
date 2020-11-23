@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"               
+       xsi:schemaLocation="http://www.alfresco.org/model/dictionary/1.0 ../../../../webapps/alfresco/WEB-INF/classes/alfresco/model/modelSchema.xsd"      
+       xmlns="http://www.alfresco.org/model/dictionary/1.0" name="dummy:model">
+
+  <description>Transaction splitter dummy Model</description>
+  <author>Thijs Lemmens</author>
+  <version>1.0</version>
+  <imports>
+     <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+     <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+  </imports>
+  <namespaces>
+     <namespace uri="dummy.model" prefix="dummy"/>
+  </namespaces>
+  <aspects>
+  	<aspect name="dummy:dummyAspect">
+  		<title>Dummy Aspect</title>
+  	</aspect>
+  </aspects>
+ 
+</model>
